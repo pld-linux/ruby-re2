@@ -11,7 +11,7 @@ License:	BSD
 Group:		Development/Languages
 Source0:	http://rubygems.org/downloads/%{pkgname}-%{version}.gem
 # Source0-md5:	bc012bbef488bf365022e9cbbcb1ad3f
-URL:		http://github.com/mudge/re2
+URL:		http://mudge.name/re2/
 BuildRequires:	re2-devel
 BuildRequires:	rpm-rubyprov
 BuildRequires:	rpmbuild(macros) >= 1.656
