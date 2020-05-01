@@ -6,7 +6,7 @@
 Summary:	Ruby bindings to re2
 Name:		ruby-%{pkgname}
 Version:	0.7.0
-Release:	5
+Release:	6
 License:	BSD
 Group:		Development/Languages
 Source0:	http://rubygems.org/downloads/%{pkgname}-%{version}.gem
