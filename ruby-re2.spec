@@ -6,15 +6,15 @@
 Summary:	Ruby bindings to re2
 Summary(pl.UTF-8):	Wiązania języka Ruby do re2
 Name:		ruby-%{pkgname}
-Version:	1.2.0
+Version:	1.4.0
 Release:	1
 License:	BSD
 Group:		Development/Languages
 Source0:	http://rubygems.org/downloads/%{pkgname}-%{version}.gem
-# Source0-md5:	8aaf69fac7a9567540791b5b5f7d35c8
+# Source0-md5:	8575c95f217df60f7db3ae89dfd1e02a
 URL:		https://github.com/mudge/re2
 BuildRequires:	libstdc++-devel >= 6:4.8
-BuildRequires:	re2-devel
+BuildRequires:	re2-devel >= 20200302
 BuildRequires:	rpm-rubyprov
 BuildRequires:	rpmbuild(macros) >= 1.656
 BuildRequires:	ruby-devel >= 1:1.8.7
@@ -36,6 +36,9 @@ wyrażeń regularnych.
 
 %prep
 %setup -q -n %{pkgname}-%{version}
+
+# required by gem helper
+%{__tar} xf %{SOURCE0} metadata.gz
 
 %build
 # write .gemspec
@@ -61,6 +64,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
+%doc LICENSE.txt README.md
 %attr(755,root,root) %{ruby_vendorarchdir}/re2.so
 %{ruby_vendorlibdir}/re2.rb
 %{ruby_vendorlibdir}/re2
