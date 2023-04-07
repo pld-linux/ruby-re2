@@ -1,17 +1,17 @@
 #
 # Conditional build:
-%bcond_with	tests		# build without tests
+%bcond_with	tests		# unit tests
 
 %define	pkgname	re2
 Summary:	Ruby bindings to re2
 Summary(pl.UTF-8):	Wiązania języka Ruby do re2
 Name:		ruby-%{pkgname}
-Version:	1.4.0
+Version:	1.6.0
 Release:	1
 License:	BSD
 Group:		Development/Languages
 Source0:	http://rubygems.org/downloads/%{pkgname}-%{version}.gem
-# Source0-md5:	8575c95f217df60f7db3ae89dfd1e02a
+# Source0-md5:	b587f794c54434e232a1df9b227f4dd4
 URL:		https://github.com/mudge/re2
 BuildRequires:	libstdc++-devel >= 6:4.8
 BuildRequires:	re2-devel >= 20200302
