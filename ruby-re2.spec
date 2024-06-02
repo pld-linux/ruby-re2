@@ -7,7 +7,7 @@ Summary:	Ruby bindings to re2
 Summary(pl.UTF-8):	Wiązania języka Ruby do re2
 Name:		ruby-%{pkgname}
 Version:	1.6.0
-Release:	1
+Release:	2
 License:	BSD
 Group:		Development/Languages
 Source0:	http://rubygems.org/downloads/%{pkgname}-%{version}.gem
